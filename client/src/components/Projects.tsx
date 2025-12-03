@@ -125,7 +125,7 @@ export function Projects() {
 
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
         <DialogContent 
-          className="max-w-lg p-0 gap-0 overflow-hidden bg-[#1a1a2e] border-primary/20" 
+          className="max-w-lg p-0 gap-0 overflow-hidden bg-background border-border" 
           data-testid="dialog-project-details"
           aria-describedby="project-description"
         >
@@ -161,7 +161,7 @@ export function Projects() {
                     {selectedProject.technologies.map((tech, index) => (
                       <Badge 
                         key={index} 
-                        className="text-xs font-medium bg-primary/20 text-white hover:bg-primary/30 border border-primary/30"
+                        className="text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 border-0"
                         data-testid={`badge-modal-tech-${index}`}
                       >
                         {tech}
