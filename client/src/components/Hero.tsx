@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Mail, Github, Linkedin, Download } from "lucide-react";
-import profileImage from "@/components/images/profile1.png";
+import profileImage from "@/components/images/profile.png";
 
 const roles = [
   "L1 Engineer",
