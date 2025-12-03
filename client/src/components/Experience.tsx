@@ -5,7 +5,7 @@ import { MapPin, Calendar } from "lucide-react";
 const experiences = [
   {
     title: "L1 Engineer",
-    company: "NW9 Multifaceted",
+    company: "Digital Parker",
     period: "July 2024 – Present",
     location: "Ahmedabad, Gujarat",
     type: "Current Role",
@@ -27,7 +27,7 @@ const education = [
     degree: "M.E. in Cyber Security (9.22 CGPA)",
     institution: "GTU - Graduate School of Engineering and Technology",
     period: "Sep 2023 – June 2025",
-    type: "Current",
+    type: "Completed",
   },
   {
     degree: "B.E. in Computer Science (8.46 CGPA)",

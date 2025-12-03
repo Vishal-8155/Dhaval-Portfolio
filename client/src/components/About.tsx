@@ -44,7 +44,7 @@ export function About() {
             </h3>
             <p className="text-base leading-relaxed text-muted-foreground mb-4" data-testid="text-about-description">
               I am a dedicated L1 Engineer with expertise in infrastructure monitoring, incident response, 
-              and security operations. Currently working at NW9 Multifaceted, I monitor application, network, 
+              and security operations. Currently working at Digital Parker, I monitor application, network, 
               and security infrastructure using tools like Grafana, Zabbix, and Vector. I collaborate with 
               SOC teams to detect, contain, and remediate IT threats, ensuring timely incident response.
             </p>

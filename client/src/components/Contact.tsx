@@ -40,11 +40,11 @@ export function Contact() {
               <div>
                 <p className="text-sm text-muted-foreground">Phone</p>
                 <a
-                  href="tel:+919974316319"
+                  href="tel:+919724709900"
                   className="font-medium hover:text-primary transition-colors"
                   data-testid="link-phone"
                 >
-                  +91 9974316319
+                  +91 9724709900
                 </a>
               </div>
             </div>
