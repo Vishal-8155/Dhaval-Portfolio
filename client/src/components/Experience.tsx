@@ -48,11 +48,11 @@ export function Experience() {
   return (
     <section id="experience" className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4" data-testid="text-experience-heading">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 sm:mb-4" data-testid="text-experience-heading">
             Work Experience
           </h2>
-          <p className="text-sm uppercase tracking-wide text-muted-foreground font-medium">
+          <p className="text-xs sm:text-sm uppercase tracking-wide text-muted-foreground font-medium px-4">
             My professional journey in cybersecurity and infrastructure monitoring
           </p>
         </div>
@@ -65,39 +65,39 @@ export function Experience() {
               <div key={index} className="relative" data-testid={`experience-${index}`}>
                 <div className="hidden md:block absolute left-8 top-6 w-4 h-4 -ml-[7px] rounded-full bg-primary border-4 border-background"></div>
 
-                <Card className="md:ml-20 p-6 hover-elevate transition-all duration-300">
-                  <div className="mb-4">
-                    <h3 className="text-xl font-medium mb-1" data-testid={`text-job-title-${index}`}>
+                <Card className="md:ml-20 p-4 sm:p-6 hover-elevate transition-all duration-300">
+                  <div className="mb-3 sm:mb-4">
+                    <h3 className="text-lg sm:text-xl font-medium mb-1" data-testid={`text-job-title-${index}`}>
                       {exp.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground mb-2" data-testid={`text-company-${index}`}>
+                    <p className="text-base sm:text-lg text-muted-foreground mb-2" data-testid={`text-company-${index}`}>
                       {exp.company}
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      <Badge variant="secondary" data-testid={`badge-type-${index}`}>
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
+                      <Badge variant="secondary" className="text-xs" data-testid={`badge-type-${index}`}>
                         {exp.type}
                       </Badge>
-                      <Badge variant="outline" className="gap-1" data-testid={`badge-period-${index}`}>
+                      <Badge variant="outline" className="gap-1 text-xs" data-testid={`badge-period-${index}`}>
                         <Calendar className="h-3 w-3" />
                         {exp.period}
                       </Badge>
-                      <Badge variant="outline" className="gap-1" data-testid={`badge-location-${index}`}>
+                      <Badge variant="outline" className="gap-1 text-xs" data-testid={`badge-location-${index}`}>
                         <MapPin className="h-3 w-3" />
                         {exp.location}
                       </Badge>
                     </div>
                   </div>
 
-                  <div className="border-t pt-4">
-                    <h4 className="font-medium mb-3">Key Achievements</h4>
+                  <div className="border-t pt-3 sm:pt-4">
+                    <h4 className="font-medium mb-2 sm:mb-3 text-sm sm:text-base">Key Achievements</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, achIndex) => (
                         <li
                           key={achIndex}
-                          className="flex gap-2 text-sm text-muted-foreground"
+                          className="flex gap-2 text-xs sm:text-sm text-muted-foreground"
                           data-testid={`text-achievement-${index}-${achIndex}`}
                         >
-                          <span className="text-primary mt-1">•</span>
+                          <span className="text-primary mt-0.5 sm:mt-1">•</span>
                           <span>{achievement}</span>
                         </li>
                       ))}
@@ -109,22 +109,22 @@ export function Experience() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Education</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Education</h3>
             <div className="space-y-4">
               {education.map((edu, index) => (
-                <Card key={index} className="p-6 hover-elevate min-h-[140px] flex flex-col justify-between">
+                <Card key={index} className="p-4 sm:p-6 hover-elevate flex flex-col justify-between">
                   <div>
-                    <h4 className="font-medium mb-1">{edu.degree}</h4>
-                    <p className="text-muted-foreground mb-2">{edu.institution}</p>
+                    <h4 className="font-medium mb-1 text-sm sm:text-base">{edu.degree}</h4>
+                    <p className="text-muted-foreground mb-2 text-xs sm:text-sm">{edu.institution}</p>
                   </div>
-                  <div className="flex gap-2">
-                    <Badge variant="outline" className="gap-1">
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    <Badge variant="outline" className="gap-1 text-xs">
                       <Calendar className="h-3 w-3" />
                       {edu.period}
                     </Badge>
-                    <Badge variant="secondary">{edu.type}</Badge>
+                    <Badge variant="secondary" className="text-xs">{edu.type}</Badge>
                   </div>
                 </Card>
               ))}
@@ -132,12 +132,12 @@ export function Experience() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Certifications</h3>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <Card key={index} className="p-6 hover-elevate min-h-[140px] flex flex-col justify-center">
-                  <h4 className="font-medium mb-1">{cert.title}</h4>
-                  <p className="text-muted-foreground">{cert.issuer}</p>
+                <Card key={index} className="p-4 sm:p-6 hover-elevate flex flex-col justify-center">
+                  <h4 className="font-medium mb-1 text-sm sm:text-base">{cert.title}</h4>
+                  <p className="text-muted-foreground text-xs sm:text-sm">{cert.issuer}</p>
                 </Card>
               ))}
             </div>

@@ -62,12 +62,12 @@ export function Hero() {
           />
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4" data-testid="text-name">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight mb-4" data-testid="text-name">
           Dhaval Chavda
         </h1>
 
-        <div className="h-12 md:h-16 mb-6">
-          <p className="text-xl md:text-3xl text-muted-foreground font-medium" data-testid="text-role">
+        <div className="h-10 sm:h-12 md:h-16 mb-6">
+          <p className="text-lg sm:text-xl md:text-3xl text-muted-foreground font-medium" data-testid="text-role">
             {displayText}
             <span className="animate-pulse">|</span>
           </p>
@@ -77,27 +77,29 @@ export function Hero() {
           Monitoring infrastructure, securing networks, and automating SOC operations with modern tools
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 mb-12 px-4 sm:px-0">
           <Button
-            size="lg"
+            size="default"
+            className="w-full sm:w-auto sm:size-lg"
             onClick={() => scrollToSection("projects")}
             data-testid="button-view-projects"
           >
             View Projects
           </Button>
           <Button
-            size="lg"
+            size="default"
             variant="outline"
             onClick={() => scrollToSection("contact")}
-            className="backdrop-blur-md"
+            className="backdrop-blur-md w-full sm:w-auto sm:size-lg"
             data-testid="button-contact"
           >
             <Mail className="mr-2 h-4 w-4" />
             Contact Me
           </Button>
           <Button
-            size="lg"
+            size="default"
             variant="secondary"
+            className="w-full sm:w-auto sm:size-lg"
             asChild
             data-testid="button-download-cv"
           >

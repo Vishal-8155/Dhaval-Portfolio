@@ -28,16 +28,16 @@ export function About() {
   return (
     <section id="about" className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4" data-testid="text-about-heading">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 sm:mb-4" data-testid="text-about-heading">
             About Me
           </h2>
-          <p className="text-sm uppercase tracking-wide text-muted-foreground font-medium">
+          <p className="text-xs sm:text-sm uppercase tracking-wide text-muted-foreground font-medium px-4">
             Passionate about cybersecurity and infrastructure monitoring
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <h3 className="text-xl md:text-2xl font-medium mb-4" data-testid="text-about-title">
               L1 Engineer & Cyber Security Professional
@@ -56,18 +56,18 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 sm:gap-6">
             {expertise.map((item, index) => {
               const Icon = item.icon;
               return (
                 <Card
                   key={index}
-                  className="p-6 hover-elevate active-elevate-2 transition-transform duration-300"
+                  className="p-4 sm:p-6 hover-elevate active-elevate-2 transition-transform duration-300"
                   data-testid={`card-expertise-${index}`}
                 >
-                  <Icon className="h-8 w-8 text-primary mb-3" />
-                  <h4 className="font-medium mb-2">{item.title}</h4>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2 sm:mb-3" />
+                  <h4 className="font-medium mb-1 sm:mb-2 text-sm sm:text-base">{item.title}</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{item.description}</p>
                 </Card>
               );
             })}

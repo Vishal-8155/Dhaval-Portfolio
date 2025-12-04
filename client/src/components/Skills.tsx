@@ -38,32 +38,32 @@ export function Skills() {
   return (
     <section id="skills" className="py-12 md:py-16 bg-muted/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4" data-testid="text-skills-heading">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-3 sm:mb-4" data-testid="text-skills-heading">
             Skills & Expertise
           </h2>
-          <p className="text-sm uppercase tracking-wide text-muted-foreground font-medium">
+          <p className="text-xs sm:text-sm uppercase tracking-wide text-muted-foreground font-medium px-4">
             Specialized in cybersecurity, network monitoring, and cloud technologies
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {skillCategories.map((skill, index) => (
             <Card
               key={index}
-              className="p-6 hover-elevate active-elevate-2 transition-transform duration-300"
+              className="p-4 sm:p-6 hover-elevate active-elevate-2 transition-transform duration-300"
               data-testid={`card-skill-${index}`}
             >
-              <div className="mb-4">
-                <h3 className="text-xl font-medium mb-2">{skill.category}</h3>
-                <p className="text-sm text-muted-foreground">{skill.description}</p>
+              <div className="mb-3 sm:mb-4">
+                <h3 className="text-lg sm:text-xl font-medium mb-1 sm:mb-2">{skill.category}</h3>
+                <p className="text-xs sm:text-sm text-muted-foreground">{skill.description}</p>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {skill.technologies.map((tech, techIndex) => (
                   <Badge
                     key={techIndex}
                     variant="secondary"
-                    className={skill.color}
+                    className={`${skill.color} text-xs`}
                     data-testid={`badge-tech-${index}-${techIndex}`}
                   >
                     {tech}
