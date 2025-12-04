@@ -5,7 +5,7 @@ import { MapPin, Calendar } from "lucide-react";
 const experiences = [
   {
     title: "L1 Engineer",
-    company: "Digital Parker",
+    company: "Parker Digital",
     period: "July 2024 – Present",
     location: "Ahmedabad, Gujarat",
     type: "Current Role",

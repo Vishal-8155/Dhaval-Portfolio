@@ -26,7 +26,7 @@ const expertise = [
 
 export function About() {
   return (
-    <section id="about" className="py-12 md:py-20">
+    <section id="about" className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4" data-testid="text-about-heading">
@@ -37,14 +37,14 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-xl md:text-2xl font-medium mb-4" data-testid="text-about-title">
               L1 Engineer & Cyber Security Professional
             </h3>
             <p className="text-base leading-relaxed text-muted-foreground mb-4" data-testid="text-about-description">
               I am a dedicated L1 Engineer with expertise in infrastructure monitoring, incident response, 
-              and security operations. Currently working at Digital Parker, I monitor application, network, 
+              and security operations. Currently working at Parker Digital, I monitor application, network, 
               and security infrastructure using tools like Grafana, Zabbix, and Vector. I collaborate with 
               SOC teams to detect, contain, and remediate IT threats, ensuring timely incident response.
             </p>
